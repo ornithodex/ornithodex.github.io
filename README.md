@@ -1,2 +1,2 @@
 # ornithodex.github.io
-Ornithodex main Site
+Ornithodex Main Site
