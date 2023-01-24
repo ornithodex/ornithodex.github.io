@@ -24,18 +24,6 @@ body {
 	text-align: right;
 }
 
-#side {
-	width: 35ch;
-	height: 100%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-	border-right: 5px solid #000;
-	background-color: red;
-}
-
 #side > #card-container {
 	width: 35ch;
 }
@@ -52,7 +40,7 @@ body {
 	background-color: green;
 }
 
-#card > img {
+#card > #pic {
 	width: 28ch;
 	height: 21ch;
 
@@ -62,7 +50,6 @@ body {
 	border-radius: 2ch;
 	
 	object-fit: cover;
-	
 }
 
 #card > #header {
