@@ -1,15 +1,11 @@
-function reqListener () { 
-	var jsonString = this.responseText.match(/(?<="table":).*(?=}\);)/g)[0];
-	var json = JSON.parse(jsonString);
-	document.getElementById("json").innerHTML = jsonString;
-	return json
+var request = new XMLHttpRequest(); 
+var requestUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7peqmhRImLAk7GjWZvTJQ8gEz3CegWXD9OfHCRCfv9muRI6U-A49xMl7RZllMDEIdgOEfA7YVOaif/pub?gid=1549752026&single=true&output=csv"
+
+request.onload = function() { 
+	var text = this.responseText;
+	console.log(text);
+	return text;
 } 
 
-var id = '1vX54pYMqq_U6QRTn86zsh9wf8uel9Oiku6NZ3bPPBTg';
-var gid = '0';
-var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid; 
-var oReq = new XMLHttpRequest(); 
-
-oReq.onload = reqListener; 
-oReq.open("get", url, true); 
-oReq.send();
+request.open("get", requestUrl, true); 
+request.send();
