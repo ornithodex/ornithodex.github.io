@@ -23,11 +23,9 @@ request.onload = function() {
 		}
 	}
 
-	console.log("ENTRIES");
-	console.info(entries);
-
 	return entries;
 } 
 
-request.open("get", requestUrl, true); 
+console.log("Bird");
+console.info(request.open("get", requestUrl, true)); 
 request.send();
