@@ -82,6 +82,12 @@ body {
 	margin: 0ch 1ch 0ch 1ch;
 }
 
+#card > #construction {
+	height: 15ch;
+	padding: 1.5ch;
+	padding-left: 7.5ch;
+}
+
 #side > #links {
 	width: 35ch;
 	height: 20ch;
@@ -96,15 +102,31 @@ body {
 	padding: 2ch;
 }
 
-#list-container{
+#content {
 	width: 100%;
 	height: 100%;
 
-	background-color: #558855;
+	background-color: red;
 }
 
-#construction {
-	height: 15ch;
-	padding: 1.5ch;
-	padding-left: 7.5ch;
+#content > #list {
+	width: 90%;
+	height: 100%;
+
+	background-color: blue;
+	margin: 0ch auto 0ch auto;
+	list-style: none;
+	overflow-y: scroll;
+	overflow-x: hide;
 }
+
+#list > li {
+	background-color: purple;
+	padding: 1ch;
+	margin: 1ch;
+}
+
+#content > #list::-webkit-scrollbar {
+	display: none;
+}
+

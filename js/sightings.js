@@ -20,4 +20,3 @@
 		"img": "https://www.allaboutbirds.org/guide/assets/photo/302389511-720px.jpg"
 	}
 ]
-}
