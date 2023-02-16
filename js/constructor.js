@@ -12,12 +12,10 @@ request.onload = function() {
 
 	let entries = [];
 	let rows = text.split("\r\n");
-	
+
 	for (let i = 0; i < rows.length; i++) {
 		let csv = rows[i].split(",");
-		for (let i = 0; i <  csv.length; i++) {
-			entries.push(csv);
-		}
+		entries.push(csv);
 	}
 	
 	console.log("ENTRIES")
