@@ -18,15 +18,13 @@ request.onload = function() {
 	for (let i = 0; i < rows.length; i++) {
 		let csv = rows[i].split(",");
 		
-		if (csv[0] != "__test__" || displayTestEntries) {
+		if (csv[2] != "__test__" || displayTestEntries) {
 			entries.push(csv);
 		}
 	}
 
-	console.log("ENTRIES")
+	console.log("ENTRIES");
 	console.info(entries);
-
-	console.
 
 	return entries;
 } 
