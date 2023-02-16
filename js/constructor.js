@@ -25,7 +25,8 @@ request.onload = function() {
 
 	for (let i = 0; i < entries.length; i++) {
 		let entry = entries[i]
-
+		console.info(entry)
+		
 		let list = document.getElementById("list")
 		let li = document.createElement("li")
 		let name = document.createElement("h2")
