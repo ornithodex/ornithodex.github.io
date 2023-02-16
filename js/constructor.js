@@ -8,9 +8,9 @@ var requestUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7peqmhRImLAk
 var numberOfQuestions = 12;
 
 request.onload = function() { 
-	var text = this.responseText;
-
 	let entries = [];
+	
+	var text = this.responseText;
 	let rows = text.split("\r\n");
 	
 	rows.shift();
@@ -23,9 +23,26 @@ request.onload = function() {
 		}
 	}
 
+	for (let i = 0; i < entries.length; i++) {
+		let entry = entries[i]
+
+		let list = document.getElementById("list")
+		let li = list.createElement("li")
+		let name = li.createElement("h2")
+		let viewer = li.createElement("h3")
+
+		name.textContent = entry[4]
+		viewer.textContent = entry[2]
+
+
+		li.appendChild()
+
+
+	}
+
 	return entries;
 } 
 
-console.log("Bird");
-console.info(request.open("get", requestUrl, true)); 
+
+request.open("get", requestUrl, true); 
 request.send();
