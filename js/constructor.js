@@ -12,6 +12,7 @@ request.onload = function() {
 
 	let entries = [];
 	let rows = text.split("\r\n");
+	console.log(rows.length)
 
 	for (let i = 0; i < rows.length; i++) {
 		let csv = rows[i].split(",");
