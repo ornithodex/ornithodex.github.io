@@ -14,9 +14,9 @@ request.onload = function() {
 	let rows = text.split("\r\n");
 	
 	for (let i = 0; i < rows.length; i++) {
-		let csv = rows
+		let csv = rows[i].split(",");
 		for (let i = 0; i <  csv.length; i++) {
-			entries.push(csv.slice(i*numberOfQuestions, (i+1)*numberOfQuestions));
+			entries.push(csv);
 		}
 	}
 	
