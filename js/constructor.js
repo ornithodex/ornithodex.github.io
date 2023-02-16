@@ -12,15 +12,22 @@ request.onload = function() {
 
 	let entries = [];
 	let rows = text.split("\r\n");
-	console.log(rows.length)
-
+	
+	rows.shift();
+	
 	for (let i = 0; i < rows.length; i++) {
 		let csv = rows[i].split(",");
-		entries.push(csv);
+		
+		if (csv[0] != "__test__" || displayTestEntries) {
+			entries.push(csv);
+		}
 	}
-	
+
 	console.log("ENTRIES")
 	console.info(entries);
+
+	console.
+
 	return entries;
 } 
 
