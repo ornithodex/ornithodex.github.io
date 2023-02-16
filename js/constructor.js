@@ -38,12 +38,6 @@ request.onload = function() {
 		li.appendChild(name)
 		li.appendChild(viewer)
 		list.appendChild(li)
-
-
-
-		li.appendChild()
-
-
 	}
 
 	return entries;
