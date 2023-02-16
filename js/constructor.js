@@ -12,12 +12,14 @@ request.onload = function() {
 
 	let entries = [];
 	let csv = text.split(",");
-	console.info(csv)
+	console.log("CSV");
+	console.info(csv);
 
 	for (let i = 0; i <  Math.floor(csv.length/numberOfQuestions); i++) {
-		entries.push(csv.slice(i*numberOfQuestions, (i+1)*numberOfQuestions))
+		entries.push(csv.slice(i*numberOfQuestions, (i+1)*numberOfQuestions));
 	}
 	
+	console.log("ENTRIES")
 	console.info(entries);
 	return entries;
 } 
