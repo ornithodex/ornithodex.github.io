@@ -27,12 +27,17 @@ request.onload = function() {
 		let entry = entries[i]
 
 		let list = document.getElementById("list")
-		let li = list.createElement("li")
-		let name = li.createElement("h2")
-		let viewer = li.createElement("h3")
-
+		let li = document.createElement("li")
+		let name = document.createElement("h2")
+		let viewer = document.createElement("h3")
+		
 		name.textContent = entry[4]
 		viewer.textContent = entry[2]
+
+		li.appendChild(name)
+		li.appendChild(viewer)
+		list.appendChild(li)
+
 
 
 		li.appendChild()
